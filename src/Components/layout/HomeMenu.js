@@ -18,7 +18,7 @@ export default function HomeMenu() {
     <>
       <section>
         <div className="absolute left-0 right-0 w-full justify-start">
-          <div className="-z-10 relative left-0 -top-[70px]  text-left ">
+          <div className="-z-10 absolute left-0 -top-[70px]  text-left ">
             <Image
               src={"/sallad1.png"}
               alt={"sallad"}
