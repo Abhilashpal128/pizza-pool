@@ -1,4 +1,4 @@
-export default function Left({ className = "w-6 h-6" }) {
+export default function Left() {
   return (
     <div>
       <svg
@@ -7,7 +7,7 @@ export default function Left({ className = "w-6 h-6" }) {
         viewBox="0 0 24 24"
         stroke-width="1.5"
         stroke="currentColor"
-        className={className}
+        className="w-6 h-6"
       >
         <path
           stroke-linecap="round"

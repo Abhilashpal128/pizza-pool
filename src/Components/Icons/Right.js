@@ -1,6 +1,6 @@
 import React from "react";
 
-function Right({ className = "w-6 h-6" }) {
+function Right() {
   return (
     <div>
       <svg
@@ -9,7 +9,7 @@ function Right({ className = "w-6 h-6" }) {
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className={className}
+        className="w-6 h-6"
       >
         <path
           strokeLinecap="round"
