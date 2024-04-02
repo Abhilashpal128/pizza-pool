@@ -57,7 +57,7 @@ export default function Header() {
   return (
     <>
       <header className="">
-        <div className="md:hidden flex justify-between items-center">
+        <div className=" md:hidden  flex justify-between items-center">
           <Link className="text-primary text-2xl font-semibold" href="/">
             PIZZA POOL
           </Link>
@@ -94,7 +94,7 @@ export default function Header() {
             <AuthLinks status={status} userName={userName} />
           </div>
         )}
-        <div className="hidden md:flex justify-between items-center  ">
+        <div className=" hidden md:flex justify-between items-center">
           <nav className="flex gap-8 font-semibold items-center text-gray-500">
             <Link className="text-primary text-2xl font-semibold" href="/">
               PIZZA POOL
