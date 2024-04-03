@@ -57,7 +57,7 @@ export default function Header() {
   return (
     <>
       <header className="">
-        <div className=" md:hidden  flex justify-between items-center">
+        <div className="flex md:hidden justify-between items-center">
           <Link className="text-primary text-2xl font-semibold" href="/">
             PIZZA POOL
           </Link>
@@ -109,7 +109,7 @@ export default function Header() {
             <Link href={"/cart"} className="relative">
               <ShoppingCart />
               {cartProducts?.length > 0 && (
-                <span className="absolute p-1 px-1 -top-2 -right-4  bg-primary text-sm text-white rounded-full leading-3">
+                <span className="absolute p-1 px-1 -top-2 -right-4 bg-primary text-sm text-white rounded-full leading-3">
                   {cartProducts.length}
                 </span>
               )}
