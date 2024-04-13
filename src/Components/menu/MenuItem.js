@@ -28,7 +28,7 @@ export default function MenuItem(MenuItems) {
     }
 
     addToCart(MenuItems, selectesSize, selectedExtras);
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    await new Promise((resolve) => setTimeout(resolve, 600));
     setShowPopUp(false);
   }
 
