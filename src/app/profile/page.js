@@ -2,7 +2,7 @@
 import { useSession } from "next-auth/react";
 import { redirect } from "next/navigation";
 import { useEffect, useState } from "react";
-import { headers } from "../../../next.config";
+import { headers } from "../../../next.config.mjs";
 
 import toast from "react-hot-toast";
 import Link from "next/link";
