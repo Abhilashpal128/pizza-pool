@@ -3,8 +3,8 @@ import React, { useContext, useState } from "react";
 import Link from "next/link";
 import { signOut, useSession } from "next-auth/react";
 import { CartContext } from "../AppContext";
-import ShoppingCart from "../Icons/ShoppingCart";
-import Bars2 from "../Icons/Bars2";
+import { MdOutlineShoppingCart } from "react-icons/md";
+import { HiBars2 } from "react-icons/hi2";
 
 function AuthLinks({ status, userName }) {
   if (status === "authenticated") {
@@ -63,7 +63,7 @@ export default function Header() {
           </Link>
           <div className="flex gap-8 items-center">
             <Link href={"/cart"} className="relative">
-              <ShoppingCart />
+              <MdOutlineShoppingCart className="h-6 w-6" />
               {cartProducts?.length > 0 && (
                 <span className="absolute p-1 px-1 -top-2 -right-4  bg-primary text-sm text-white rounded-full leading-3">
                   {cartProducts.length}
@@ -76,7 +76,7 @@ export default function Header() {
                 setMobileNavOpen((prev) => !prev);
               }}
             >
-              <Bars2 />
+              <HiBars2 className="w-6 h-6" />
             </button>
           </div>
         </div>
@@ -107,7 +107,7 @@ export default function Header() {
           <nav className="flex items-center gap-4 text-gray-500 font-semibold">
             <AuthLinks status={status} userName={userName} />
             <Link href={"/cart"} className="relative">
-              <ShoppingCart />
+              <MdOutlineShoppingCart className="h-6 w-6" />
               {cartProducts?.length > 0 && (
                 <span className="absolute p-1 px-1 -top-2 -right-4 bg-primary text-sm text-white rounded-full leading-3">
                   {cartProducts.length}

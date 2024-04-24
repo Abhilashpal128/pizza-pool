@@ -1,5 +1,5 @@
 "use client";
-import Right from "@/Components/Icons/Right";
+import { MdOutlineArrowCircleRight } from "react-icons/md";
 import { useProfile } from "@/Components/UserProfile";
 import UserTabs from "@/Components/layout/UserTabs";
 import Image from "next/image";
@@ -32,7 +32,7 @@ export default function MenuItemPage() {
       <div className="mt-8">
         <Link className="button flex" href={"/menu-items/new"}>
           <span>Create new menu item</span>
-          <Right />
+          <MdOutlineArrowCircleRight className="w-6 h-6" />
         </Link>
       </div>
       <div>

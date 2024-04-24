@@ -1,5 +1,5 @@
 "use client";
-import Left from "@/Components/Icons/Left";
+import { MdOutlineArrowCircleLeft } from "react-icons/md";
 import { useProfile } from "@/Components/UserProfile";
 import MenuItemForm from "@/Components/layout/MenuItemForm";
 import UserTabs from "@/Components/layout/UserTabs";
@@ -56,7 +56,7 @@ export default function NewMenuItemPage() {
       <UserTabs isAdmin={true} />
       <div className="max-w-2xl mx-auto mt-8">
         <Link className="button" href={"/menu-items"}>
-          <Left />
+          <MdOutlineArrowCircleLeft className="w-6 h-6" />
           <span>Show all menu items</span>
         </Link>
       </div>

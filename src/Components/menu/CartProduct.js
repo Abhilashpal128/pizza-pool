@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { cartProductPrice } from "../AppContext";
-import Trash from "../Icons/Trash";
+import { HiOutlineTrash } from "react-icons/hi2";
 
 export default function CartProduct({ product, onRemove, index }) {
   return (
@@ -45,7 +45,7 @@ export default function CartProduct({ product, onRemove, index }) {
               console.log(index);
             }}
           >
-            <Trash />
+            <HiOutlineTrash className="w-6 h-6" />
           </button>
         </div>
       )}

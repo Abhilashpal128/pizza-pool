@@ -1,7 +1,9 @@
 import Image from "next/image";
 import React from "react";
-import Right from "../Icons/Right";
-import { MdOutlineArrowCircleLeft } from "react-icons/md";
+import {
+  MdOutlineArrowCircleLeft,
+  MdOutlineArrowCircleRight,
+} from "react-icons/md";
 
 export default function Hero() {
   return (
@@ -20,11 +22,11 @@ export default function Hero() {
         <div className="flex gap-4 text-sm">
           <button className="bg-primary flex  justify-center gap-2 items-center uppercase  text-white py-2 px-8 rounded-full">
             Order Now
-            <Right />
+            <MdOutlineArrowCircleRight className="h-6 w-6" />
           </button>
           <button className="flex  items-center border-0 gap-2 py-2 text-gray-600 font-semibold">
             Learn More
-            <MdOutlineArrowCircleLeft className="w-6 h-6" />
+            <MdOutlineArrowCircleRight className="w-6 h-6" />
           </button>
         </div>
       </div>

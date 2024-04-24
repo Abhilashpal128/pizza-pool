@@ -1,6 +1,8 @@
 {
-  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
+  "/profile/page": "app/profile/page.js",
   "/page": "app/page.js",
-  "/api/menu-items/route": "app/api/menu-items/route.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js"
+  "/menu-items/page": "app/menu-items/page.js",
+  "/menu-items/edit/[id]/page": "app/menu-items/edit/[id]/page.js",
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
+  "/api/menu-items/route": "app/api/menu-items/route.js"
 }

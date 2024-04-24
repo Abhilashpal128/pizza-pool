@@ -1,11 +1,9 @@
 "use client";
 import { CartContext, cartProductPrice } from "@/Components/AppContext";
-import Trash from "@/Components/Icons/Trash";
 import { useProfile } from "@/Components/UserProfile";
 import AddressInputs from "@/Components/layout/AddressInputs";
 import SectionHeaders from "@/Components/layout/SectionHeaders";
 import CartProduct from "@/Components/menu/CartProduct";
-import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useContext, useEffect, useState } from "react";
 import toast from "react-hot-toast";
@@ -19,7 +17,6 @@ export default function CartPage() {
   const { data } = useProfile();
   const uniqueId = uniqid();
   const router = useRouter();
-  let orderId = "";
 
   useEffect(() => {
     console.log(data);

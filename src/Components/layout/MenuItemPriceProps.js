@@ -1,9 +1,9 @@
 "use client";
 import { useState } from "react";
-import Plus from "../Icons/Plus";
-import Trash from "../Icons/Trash";
-import ChevronDown from "../Icons/ChevronDown";
-import ChevronUp from "../Icons/ChevronUp";
+import { FiPlus } from "react-icons/fi";
+import { HiOutlineTrash } from "react-icons/hi2";
+import { IoChevronDown } from "react-icons/io5";
+import { IoChevronUp } from "react-icons/io5";
 
 export default function MenuItemPriceProps({
   name,
@@ -45,8 +45,8 @@ export default function MenuItemPriceProps({
         className="inline-flex p-1 gap-1 border-0 justify-start"
         type="button"
       >
-        {isOpen && <ChevronUp />}
-        {!isOpen && <ChevronDown />}
+        {isOpen && <IoChevronUp className="h-6 w-6" />}
+        {!isOpen && <IoChevronDown className="w-6 h-6" />}
 
         <span>{name}</span>
         <span>({props?.length})</span>
@@ -82,7 +82,7 @@ export default function MenuItemPriceProps({
                     removeProps(index);
                   }}
                 >
-                  <Trash />
+                  <HiOutlineTrash className="h-6 w-6" />
                 </button>
               </div>
             </div>
@@ -92,7 +92,7 @@ export default function MenuItemPriceProps({
           onClick={addProps}
           className="bg-white items-center"
         >
-          <Plus className="w-4 h-4" />
+          <FiPlus className="w-4 h-4" />
           <span>{addlabel}</span>
         </button>
       </div>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import AddToCartButton from "./AddToCartButton";
 
 export default function MenuItemTIle({ onAddTOCart, ...item }) {
